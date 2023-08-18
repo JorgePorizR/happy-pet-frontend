@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Jorge Poriz Rojas" />
+    <meta name="Description" content="Proyecto Final - WEB I" />
+    <meta name="theme-color" content="#006229" />
+
+    <meta name="og:title" content="HappyPet SCZ" />
+    <meta name="og:url" content="http://127.0.0.1:5500/tienda.html" />
+    <meta name="og:image" content="" />
+    <meta
+      name="og:description"
+      content="HappyPet_scz encontraras lo que deseas
+    para hacer feliz a tu amigo(a) mas fiel."
+    />
+
+    <title>Tienda</title>
+
+    <link rel="stylesheet" href="css_tienda/all.min.css" />
+    <link rel="stylesheet" href="css_tienda/fontawesome.all.css" />
+    <link rel="stylesheet" href="css_tienda/fonts.css" />
+    <link rel="stylesheet" href="css_tienda/normalize.css" />
+
+    <link rel="stylesheet" href="css_tienda/style.css" />
+    <link rel="stylesheet" href="css_tienda/header.css" />
+    <link rel="stylesheet" href="css_tienda/list_mall.css" />
+    <link rel="stylesheet" href="css_tienda/footer.css" />
+
+    <link rel="stylesheet" href="css_tienda/carrito.css" />
+    <link rel="stylesheet" href="css_tienda/factura.css" />
+    <link rel="stylesheet" href="css_tienda/details.css" />
+    <link rel="stylesheet" href="css_tienda/msg.css" />
+  </head>
+  <body >
+    <div class="container">
+      <header class="header">
+        <div class="header_nav">
+          <a href="../principal/principal.html" class="header_logo">
+            <img class="header_logo_img" src="../img/logoImg.png" alt="Logo" />
+            <img class="header_titulo_img" src="../img/logohappyEditado.png" alt="Imagen Titulo">
+          </a>
+          <form class="header_search">
+            <input type="text" class="search_input" placeholder="Buscar" />
+            <button type="submit" class="search_button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <button class="header_car"
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></button>
+        <a class="header_edit" href="edit.html"
+          ><i class="fa-solid fa-pen-to-square"></i
+        ></a>
+      </header>
+
+      <div class="list_mall">
+        <div class="list_categoria">
+          <span id="container_categoria_check">
+            <input type="checkbox" id="list_categoria_check" />
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </span>
+          <table class="list_table_cartegoria">
+            <thead>
+              <tr>
+                <th id="categoria_text">Categorias</th>
+              </tr>
+            </thead>
+            <tbody id="table_list_categoria">
+              
+            </tbody>
+          </table>
+        </div>
+        <div id="list_productos" class="list_mall_items">
+          <!-- <figure class="item1">
+            <a href="../detalle/detalle_P1.html">
+              <img
+              class="item1_img"
+              src="../img/comidas/comidaP1.png"
+              alt="Imagen de Producto1"
+              />
+            </a>
+            <figcaption class="item1_subitle">
+              <span class="item1_subitle_text1">DogPro Adulto Senior</span><br />
+              <span class="item1_subitle_text2">15 Kg</span><br />
+              <span class="item1_subitle_text3">Bs.410</span>
+  
+              <div class="item1_buttons">
+                <a class="item1_button1" href="#"
+                  ><span>Agregar al Carrito</span></a
+                >
+                <a class="item1_button2" href="../detalle/detalle_P1.html"><span>Detalle</span></a>
+              </div>
+            </figcaption>
+          </figure>
+  
+          <figure class="item2">
+            <a href="../detalle/detalle_G1.html">
+              <img
+              class="item2_img"
+              src="../img/comidas/comidaG1.png"
+              alt="Imagen de Producto2"
+              />
+            </a>
+            <figcaption class="item2_subitle">
+              <span class="item2_subitle_text1">CatPro Adulto</span><br />
+              <span class="item2_subitle_text2">15 Kg</span><br />
+              <span class="item2_subitle_text3">Bs.360</span>
+  
+              <div class="item2_buttons">
+                <a class="item2_button1" href="#"
+                  ><span>Agregar al Carrito</span></a
+                >
+                <a class="item2_button2" href="../detalle/detalle_G1.html"><span>Detalle</span></a>
+              </div>
+            </figcaption>
+            
+          </figure>
+  
+          <figure class="item3">
+            <img
+              class="item3_img"
+              src="../img/comidas/comidaP2.png"
+              alt="Imagen de Producto3"
+            />
+            <figcaption class="item3_subitle">
+              <span class="item3_subitle_text1"
+                >Cibau Cachorro Razas Peque&ntilde;as</span
+              ><br />
+              <span class="item3_subitle_text2">10 Kg</span><br />
+              <span class="item3_subitle_text3">Bs.290</span>
+  
+              <div class="item3_buttons">
+                <a class="item3_button1" href="#"
+                  ><span>Agregar al Carrito</span></a
+                >
+                <a class="item3_button2" href="../detalle/detalle_P2.html"><span>Detalle</span></a>
+              </div>
+            </figcaption>
+            
+          </figure>
+  
+          <figure class="item4">
+            <img
+              class="item4_img"
+              src="../img/comidas/comidaG2.png"
+              alt="Imagen de Producto4"
+            />
+            <figcaption class="item4_subitle">
+              <span class="item4_subitle_text1"
+                >Pro Plan Gato Urinary</span
+              ><br />
+              <span class="item4_subitle_text2">7.5 Kg</span><br />
+              <span class="item4_subitle_text3">Bs.390</span>
+  
+              <div class="item4_buttons">
+                <a class="item4_button1" href="#"
+                  ><span>Agregar al Carrito</span></a
+                >
+                <a class="item4_button2" href="../detalle/detalle_G2.html"><span>Detalle</span></a>
+              </div>
+            </figcaption>
+            
+          </figure>
+  
+          <figure class="item5">
+            <img
+              class="item5_img"
+              src="../img/comidas/comidaP3.png"
+              alt="Imagen de Producto5"
+            />
+            <figcaption class="item5_subitle">
+              <span class="item5_subitle_text1"
+                >Pro Plan Cachorro Raza Peque&ntilde;a</span
+              ><br />
+              <span class="item5_subitle_text2">3 Kg</span><br />
+              <span class="item5_subitle_text3">Bs.150</span>
+  
+              <div class="item5_buttons">
+                <a class="item5_button1" href="#"
+                  ><span>Agregar al Carrito</span></a
+                >
+                <a class="item5_button2" href="#"><span>Detalle</span></a>
+              </div>
+            </figcaption>
+            
+          </figure>
+  
+          <figure class="item6">
+            <img
+              class="item6_img"
+              src="../img/comidas/comidaG3.png"
+              alt="Imagen de Producto6"
+            />
+            <figcaption class="item6_subitle">
+              <span class="item6_subitle_text1"
+                >Pro Plan Kitten</span
+              ><br />
+              <span class="item6_subitle_text2">7.5 Kg</span><br />
+              <span class="item6_subitle_text3">Bs.375</span>
+  
+              <div class="item6_buttons">
+                <a class="item6_button1" href="#"
+                  ><span>Agregar al Carrito</span></a
+                >
+                <a class="item6_button2" href="#"><span>Detalle</span></a>
+              </div>
+            </figcaption>
+            
+          </figure> -->
+        </div>
+      </div>
+
+      <footer class="footer">
+        <nav class="footer_nav">
+          <ul class="footer_nav_links">
+            <li>
+              <a href="../principal/principal.html" class="link_1">
+                <span>Inicio</span>
+              </a>
+            </li>
+            <li>
+              <a href="../tienda/tienda.html" class="link_2">
+                <span>Tienda</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link_3">
+                <span>Blog</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link_4">
+                <span>Contacto</span>
+              </a>
+            </li>
+          </ul>
+
+          <figure class="footer_direction">
+            <address class="footer_direction_text">
+              <span>Buscanos en: </span><br />
+              Avenida X de la calle Y<br />
+              al doblar la via Z<br />
+            </address>
+            <img
+              class="footer_direction_image"
+              src="../img/map.png"
+              alt="imagen de direccion"
+            />
+          </figure>
+        </nav>
+
+        <div class="footer_icons">
+          <ul class="footer_nav_icons">
+            <li>
+              <a href="#" class="icon_1">
+                <span><i class="fa-brands fa-facebook"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon_2">
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon_3">
+                <span><i class="fa-brands fa-youtube"></i></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+
+      <div id="modal_detalle" class="popup_container">
+        <div id="detalle_popup" class="popup_detalle">
+          <button id="btn_detalle_exit">
+            <span><i class="fa-sharp fa-solid fa-circle-xmark"></i></span>
+          </button>
+
+          <div class="details">
+            <figure class="details_data">
+              <img class="details_data_img" src="#" alt="Imagen de Producto" />
+              <figcaption class="details_data_text">
+                <p class="details_data_text1"></p>
+                <p class="details_data_text2"></p>
+                <p class="details_data_text3"></p>
+
+                <button id="btn_agregar_carrito" class="details_data_button">
+                  <span>Agregar al Carrito</span>
+                </button>
+              </figcaption>
+            </figure>
+
+            <div class="details_description">
+              <p class="details_description_text"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal_carrito" class="popup_container_carrito">
+        <div id="carrito_popup" class="popup_carrito">
+          <button id="btn_carrito_exit">
+            <span><i class="fa-sharp fa-solid fa-circle-xmark"></i></span>
+          </button>
+          <h1 id="carrito_titulo"><i class="fa-solid fa-cart-shopping"></i> PEDIDO</h1>
+          <div class="carrito_container">
+            <p class="carrito_subtitulo">ENTREGA DESDE</p>
+            <div class="carrito_texts">
+              <p class="carrito_text1"><i class="fa-solid fa-shop"></i></p>
+              <p class="carrito_text2">
+                Ciudad de Santa Cruz de la Sierra,
+                8vo. Anillo a 3 cuadras cerca del combodromo
+                Barrio El Progreso calle Totai N°0000
+              </p>
+            </div>
+            <p class="carrito_subtitulo">ARTICULOS</p>
+            <div class="form_tables_car">
+              <div class="tabla_productos_car">
+                <table>
+                  <thead>
+                    <tr>
+                      <th id="tabla_productos_car_p">Producto</th>
+                      <th id="tabla_productos_car_n">Nombre</th>
+                      <th id="tabla_productos_car_pr">Precio</th>
+                      <th id="tabla_productos_car_pe">Peso</th>
+                      <th id="tabla_productos_car_c">Cantidad</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tabla_productos_car_body">
+                    <tr>
+                      <td colspan="5">No hay Productos en el carrito</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <table class="tabla_subtotal_car">
+                <tbody class="tabla_subtotal_car_body">
+                  <tr>
+                    <td>Subtotal</td>
+                    <td id="subtotal">Bs <span id="subtotal_text">0.00</span></td>
+                  </tr>
+                  <tr>
+                    <td>Cargo de embalaje</td>
+                    <td id="embalaje">Bs <span id="embalaje_text">15.00</span></td>
+                  </tr>
+                  <tr>
+                    <td>Total</td>
+                    <td id="total">Bs <span id="total_text">0.00</span></td>
+                  </tr>
+                  <tr>
+                    <td><button id="btn_comprar">COMPRAR</button></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal_factura" class="popup_container_factura">
+        <div id="factura_popup" class="popup_factura">
+          <button id="btn_factura_exit">
+            <span><i class="fa-sharp fa-solid fa-circle-xmark"></i></span>
+          </button>
+          <h1 id="factura_titulo"><i class="fa-solid fa-receipt"></i> RECIBO</h1>
+          <div class="factura_container">
+            <div class="factura_subtitulo_1">
+              <span class="factura_subtitulo_text1">NIT: </span>
+              <span class="factura_subtitulo_text2"></span>
+            </div>
+
+            <p class="factura_subtitulo">DATOS DEL CLIENTE</p>
+            <div class="factura_subtitulo_2">
+              <p class="factura_subtitulo_text3"><i class="fa-solid fa-user"></i></p>
+              <p class="factura_subtitulo_text4">
+                nit del cliente
+              </p>
+            </div>
+
+            <p class="factura_subtitulo">ENTREGA DESDE</p>
+            <div class="factura_subtitulo_3">
+              <p class="factura_subtitulo_text5"><i class="fa-solid fa-shop"></i></p>
+              <p class="factura_subtitulo_text6">
+                Ciudad de Santa Cruz de la Sierra,
+                8vo. Anillo a 3 cuadras cerca del combodromo
+                Barrio El Progreso calle Totai N°0000
+              </p>
+            </div>
+
+            <p class="factura_subtitulo">DETALLE DE PEDIDO</p>
+            <div class="form_tables_fac">
+              <div class="tabla_productos_fac">
+                <table>
+                  <thead>
+                    <tr>
+                      <th id="tabla_productos_fac_p">Producto</th>
+                      <th id="tabla_productos_fac_n">Nombre</th>
+                      <th id="tabla_productos_fac_pr">Precio</th>
+                      <th id="tabla_productos_fac_pe">Peso</th>
+                      <th id="tabla_productos_fac_c">Cantidad</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tabla_productos_fac_body">
+                    <tr>
+                      <td><img width="50" src="#" alt="Producto IMG"></td>
+                      <td>0 Items</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <table class="tabla_subtotal_fac">
+                <tbody class="tabla_subtotal_fac_body">
+                  <tr>
+                    <td>Subtotal</td>
+                    <td id="subtotal_fac">Bs 0.00</td>
+                  </tr>
+                  <tr>
+                    <td>Cargo de embalaje</td>
+                    <td id="embalaje_fac">Bs 15.00</td>
+                  </tr>
+                  <tr>
+                    <td>Total</td>
+                    <td id="total_fac">Bs 0.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="modal_msg" class="popup_container_msg">
+        <div id="msg_popup" class="popup_msg">
+          <h1 id="msg_title"></h1>
+          <button id="msg_btn_ok">ok</button>
+        </div>
+      </div>
+
+    </div>
+    <script src="../principal/js/utils.js"></script>
+    <script src="js/tienda.js"></script>
+  </body>
+</html>

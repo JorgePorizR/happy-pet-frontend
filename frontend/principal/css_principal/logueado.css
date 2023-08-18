@@ -1,0 +1,95 @@
+.popup_logueado {
+    display: none;
+    width: 250px;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3540a5;
+    font-family: 'Roboto', sans-serif;
+}
+
+#btn_logueado_exit {
+    border: 0px;
+    background-color: #3540a5;
+    font-size: 25px;
+    float: right;
+    color: #ffffff;
+}
+
+#btn_logueado_exit span:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.popup_logueado_container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#img_user_logueado{
+    width: 90px;
+}
+
+.popup_logueado_container p{
+    width: 210px;
+    font-size: 18px;
+}
+
+#logueado_nombre{
+    color: #ffffff;
+}
+
+#logueado_email, #logueado_phone{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #d3d3d3;
+}
+
+#logueado_btn_historial{
+    border: 0px;
+    background-color: #3540a5;
+    text-align: left;
+    margin-top: 15px;
+    width: 250px;
+    height: 35px;
+    transition: all ease 250ms;
+    cursor: pointer;
+}
+
+#logueado_btn_historial:hover{
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #3d49b4;
+    transition: all ease 250ms;
+}
+
+#logueado_btn_historial span{
+    margin-left: 10px;
+}
+
+#logueado_btn_salir{
+    border: 0px;
+    background-color: #3540a5;
+    text-align: left;
+    margin-top: 15px;
+    width: 250px;
+    height: 35px;
+    transition: all ease 250ms;
+    cursor: pointer;
+}
+
+#logueado_btn_salir:hover{
+    color: #ffffff;
+    font-weight: bold;
+    background-color: #3d49b4;
+    transition: all ease 250ms;
+}
+
+#logueado_btn_salir span{
+    margin-left: 10px;
+}

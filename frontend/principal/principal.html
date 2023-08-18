@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Jorge Poriz Rojas" />
+    <meta name="Description" content="Proyecto Final - WEB I" />
+    <meta name="theme-color" content="#006229" />
+
+    <meta name="og:title" content="HappyPet SCZ" />
+    <meta
+      name="og:url"
+      content="http://127.0.0.1:5500/src/frontend/principal/principal.html"
+    />
+    <meta name="og:image" content="" />
+    <meta
+      name="og:description"
+      content="HappyPet_scz encontraras lo que deseas
+    para hacer feliz a tu amigo(a) mas fiel."
+    />
+
+    <title>Pagina Principal</title>
+
+    <link rel="stylesheet" href="css_principal/all.min.css" />
+    <link rel="stylesheet" href="css_principal/fontawesome.all.css" />
+    <link rel="stylesheet" href="css_principal/fonts.css" />
+    <link rel="stylesheet" href="css_principal/normalize.css" />
+
+    <link rel="stylesheet" href="css_principal/style.css" />
+    <link rel="stylesheet" href="css_principal/header.css" />
+    <link rel="stylesheet" href="css_principal/slider.css" />
+    <link rel="stylesheet" href="css_principal/footer.css" />
+    <link rel="stylesheet" href="css_principal/suscripcion.css" />
+
+    <link rel="stylesheet" href="css_principal/login.css" />
+    <link rel="stylesheet" href="css_principal/logueado.css" />
+    <link rel="stylesheet" href="css_principal/form.css" />
+    <link rel="stylesheet" href="css_principal/historial.css" />
+    <link rel="stylesheet" href="css_principal/list_mall.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="../principal/principal.html" class="header_logo">
+          <img class="header_logo_img" src="../img/logoImg.png" alt="Logo" />
+          <img class="header_titulo_img" src="../img/logohappyEditado.png" alt="Imagen Titulo">
+        </a>
+        <button id="user_login" class="header_user">
+          <i class="fa-solid fa-user"></i>
+          <span id="user_id_prueba"></span>
+        </button>
+      </header>
+
+      <nav class="nav">
+        <a href="../principal/principal.html" class="item_1">
+          <span>Inicio</span>
+        </a>
+        <a href="../tienda/tienda.html" class="item_2">
+          <span>Tienda</span>
+        </a>
+        <a href="#" class="item_3">
+          <span>Blog</span>
+        </a>
+        <a href="#" class="item_4">
+          <span>Contacto</span>
+        </a>
+      </nav>
+
+      <div class="slider">
+        <div class="slider_inner">
+          <img src="../img/publicidad1Edit.jpg" alt="Publicidad 1">
+          <img src="../img/publicidad2Edit.jpg" alt="Publicidad 2">
+          <img src="../img/publicidad3Edit.jpg" alt="Publicidad 3">
+          <img src="../img/publicidad4Edit.jpg" alt="Publicidad 4">
+        </div>
+      </div>
+
+      <div class="list_mall">
+        <h1 id="list_mall_titulo">Productos Destacados</h1>
+        <div id="list_productos" class="list_mall_items">
+          
+        </div>
+      </div>
+
+      <section class="suscripcion">
+        <h2 class="subcripcion_title">SUBSCRIPCION Y DESCUENTOS EXCLUSIVOS</h2>
+        <p>
+          Subscribete ahora para poder obtener mas informacion sobre nuestros
+          productos exclusivos.
+        </p>
+        <form class="subcripcion_email">
+          <input
+            class="subcripcion_emailText"
+            type="text"
+            placeholder="Tu direccion de email"
+          />
+          <a class="subcripcion_boton" href=""><span>Suscribirme</span></a>
+        </form>
+
+        <p>
+          <strong> Sobre HappyPet scz:</strong> tienda de alimento y más para
+          mascotas Somos una tienda de mascotas que cuenta con la mayor variedad
+          y los precios más convenientes en productos y alimento para mascotas.
+          Contamos con alimento para perros y gatos.
+        </p>
+      </section>
+
+      <footer class="footer">
+        <nav class="footer_nav">
+          <ul class="footer_nav_links">
+            <li>
+              <a href="../principal/principal.html" class="link_1">
+                <span>Inicio</span>
+              </a>
+            </li>
+            <li>
+              <a href="../tienda/tienda.html" class="link_2">
+                <span>Tienda</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link_3">
+                <span>Blog</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="link_4">
+                <span>Contacto</span>
+              </a>
+            </li>
+          </ul>
+
+          <figure class="footer_direction">
+            <address class="footer_direction_text">
+              <span>Buscanos en: </span><br />
+              Avenida X de la calle Y<br />
+              al doblar la via Z<br />
+            </address>
+            <img
+              class="footer_direction_image"
+              src="../img/map.png"
+              alt="imagen de direccion"
+            />
+          </figure>
+        </nav>
+
+        <div class="footer_icons">
+          <ul class="footer_nav_icons">
+            <li>
+              <a href="#" class="icon_1">
+                <span><i class="fa-brands fa-facebook"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon_2">
+                <span><i class="fa-brands fa-instagram"></i></span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon_3">
+                <span><i class="fa-brands fa-youtube"></i></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <div id="modal_login" class="popup_container">
+      <div class="popup_login">
+        <button id="btn_login_exit"><span><i class="fa-sharp fa-solid fa-circle-xmark"></i></span></button>
+        <div class="login_logo">
+          <img src="../img/User-icon.png" alt="Logo" />
+        </div>
+
+        <form id="login_form" class="login_form">
+          <input
+            type="email"
+            id="email_input"
+            placeholder="Correo electrónico"
+            required="required"
+          /><br />
+          <p class="login_validacion" id="login_validacion_email"></p>
+          <input
+            type="password"
+            id="pass_input"
+            placeholder="Contraseña"
+            required="required"
+          /><br />
+          <p class="login_validacion" id="login_validacion_contra"></p>
+          <input type="submit" id="login_input" value="Iniciar sesión" />
+          <p class="login_validacion" id="login_validacion_cuenta"></p>
+          <div class="login_form_create">
+            ¿No tienes una cuenta?
+            <a id="create_user" href="#">Crear una cuenta</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="popup_logueado">
+        <button id="btn_logueado_exit"><span><i class="fa-sharp fa-solid fa-circle-xmark"></i></span></button>
+        <div class="popup_logueado_container">
+          <img id="img_user_logueado" src="../img/User-icon.png" alt="Img User">
+          <p id="logueado_nombre"></p>
+          <p id="logueado_email"></p>
+          <p id="logueado_phone"></p>
+        </div>
+        <button id="logueado_btn_historial"><i class="fa-solid fa-clock-rotate-left"></i><span>Historial</span></button>
+        <button id="logueado_btn_salir"><i class="fa-solid fa-right-from-bracket"></i><span>Salir</span></button>
+      </div>
+    </div>
+
+    <div id="modal_create" class="popup_create">
+      <div class="popup_create_user">
+        <a href="#" id="btn_exit_form"><span><i class="fa-sharp fa-solid fa-circle-xmark"></i></span></a>
+
+        <div class="register_logo">
+          <img src="../img/User-icon.png" alt="Logo" />
+        </div>
+  
+        <form id="create_form" class="form_registro">
+          <label for="nombre_create_input">Nombre</label>
+          <input id="nombre_create_input" type="text" placeholder="ejem: *Jorge Poriz Rojas*" required /><br />
+          <p class="create_validacion" id="create_validacion_nombre"></p>
+        
+          <label for="email_create_input">Correo electrónico</label>
+          <input id="email_create_input" type="email" placeholder="ejem: example@gmail.com" required /><br />
+          <p class="create_validacion" id="create_validacion_email"></p>
+
+          <label for="pass_create_input">Contraseña</label>
+          <input id="pass_create_input" type="password" placeholder="sugerencia: Tener 8 o más digitos" required /><br />
+          <p class="create_validacion" id="create_validacion_contra"></p>
+        
+          <label for="phone_create_input">Teléfono</label>
+          <input id="phone_create_input" type="tel" placeholder="ejem: *61518256*" required /><br />
+          <p class="create_validacion" id="create_validacion_phone"></p>
+        
+          <input id="bnt_registrar_input" type="submit" value="Registrarse" />
+        </form>
+      </div>
+    </div>
+
+    <div id="modal_historial" class="popup_container_historial">
+      <div id="historial_popup" class="popup_historial">
+        <button id="btn_exit_historial"><span><i class="fa-sharp fa-solid fa-circle-xmark"></i></span></button>
+        <h1 id="historial_titulo">Historial</h1>
+
+        <div class="list_historial">
+          <div class="list_table_historial">
+            <table>
+              <thead>
+                <tr>
+                  <th id="tabla_historial_fecha">Fecha</th>
+                  <th id="tabla_historial_total">Total</th>
+                  <th id="tabla_historial_articulos">Articulos</th>
+                </tr>
+              </thead>
+              <tbody class="tabla_historial_body">
+                <tr>
+                  <td colspan="3">No hay Productos Comprados</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/principal.js"></script>
+    <!-- <script src="js/login.js"></script> -->
+    <!-- <script src="js/form.js"></script> -->
+  </body>
+</html>

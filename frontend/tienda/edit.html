@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editor</title>
+
+    <link rel="stylesheet" href="css_tienda/all.min.css" />
+    <link rel="stylesheet" href="css_tienda/fontawesome.all.css" />
+    <link rel="stylesheet" href="css_tienda/fonts.css" />
+    <link rel="stylesheet" href="css_tienda/normalize.css" />
+    
+    <link rel="stylesheet" href="css_tienda/form_list.css" />
+  </head>
+  <body >
+    <div id="modal_edit" class="popup_container_edit">
+      <div id="#edit_popup" class="popup_edit">
+        <a id="edit_exit" href="tienda.html">
+          <span><i class="fa-sharp fa-solid fa-circle-xmark"></i></span>
+        </a>
+        <div class="form">
+          <h1 id="titulo_admin" >Agregar Producto</h1>
+          <form id="formulario_producto" class="form_createp">
+            <span>Nombre:</span>
+            <input type="text" id="nombre_p" required/><br>
+            <p class="text_error" id="text_error_cnombre">*nombre no permitido*</p>
+
+            <span>Precio:</span>
+            <input type="number" id="precio_p" step="0.01" required/><br>
+            <p class="text_error" id="text_error_cprecio">*nombre no permitido*</p>
+
+            <span>Peso (en Kg):</span>
+            <input type="number" id="peso_p" step="0.01" required/><br>
+            <p class="text_error" id="text_error_cpeso">*peso no permitido*</p>
+
+            <span>Categoria:</span>
+            <select id="categoria_p">
+              <option value="select">Seleccionar Categoria</option></select
+            ><br>
+
+            <span>Descripción:</span><br>
+
+            <textarea id="descripcion_p" rows="4" cols="50" required></textarea> <br>
+            <p class="text_error" id="text_error_cdescripcion">*Error en los datos*</p>
+
+            <span>Imagen:</span>
+            <input
+              type="file"
+              id="imagen_p"
+              name="imagen"
+              accept="image/*"
+              required
+            />
+            <br />
+            <p class="text_error" id="text_error_cimagen">*imagen no valida*</p>
+
+            <input id="bnt_createp_input" type="submit" value="Crear" />
+          </form>
+
+          <form id="formulario_editar" class="form_editp">
+            <span>Nombre:</span>
+            <input type="text" id="nombre_edit" /><br />
+
+            <span>Precio:</span>
+            <input type="number" id="precio_edit" step="0.01" /><br />
+
+            <span>Peso (en Kg):</span>
+            <input type="number" id="peso_edit" step="0.01" /><br />
+
+            <span>Categoria:</span>
+            <select id="categoria_edit">
+              <option value="select">Seleccionar Categoria</option></select
+            ><br />
+
+            <span>Descripción:</span>
+
+            <textarea id="descripcion_edit" rows="4" cols="50"></textarea><br />
+
+            <span>Imagen:</span>
+            <input
+              type="file"
+              id="imagen_edit"
+              name="imagen"
+              accept="image/*"
+            />
+            <br />
+
+            <input id="bnt_editar_input" type="submit" value="Guardar" />
+            <input id="btn_cancelar" type="button" value="Cancelar" />
+          </form>
+        </div>
+
+        <div class="list">
+          <h1 class="list_productos_titulo">Lista de Productos</h1>
+          <p class="msg_list_productos"></p>
+          <div class="list_table">
+            <table>
+              <thead>
+                <tr>
+                  <th id="numero">N°</th>
+                  <th id="producto">Producto</th>
+                  <th>Precio</th>
+                  <th>Peso</th>
+                  <th>Categoría</th>
+                </tr>
+              </thead>
+              <tbody id="table_list_container">
+
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="pedidos_list">
+          <h1 class="pedidos_list_titulo">Lista de Pedidos</h1>
+          <div class="pedidos_list_table">
+            <table>
+              <thead>
+                <tr>
+                  <th id="pedidos_list_table_fecha">Fecha</th>
+                  <th id="pedidos_list_table_cliente">Cliente</th>
+                  <th id="pedidos_list_table_total">Total</th>
+                  <th id="pedidos_list_table_productos">Articulos</th>
+                </tr>
+              </thead>
+              <tbody class="tabla_pedidos_body">
+                <tr>
+                  <td>2023-07-16</td>
+                  <td>Jose</td>
+                  <td>1220.00</td>
+                  <td>Comida, juguete</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="clientes_list">
+          <h1 class="clientes_list_titulo">Lista de Clientes</h1>
+          <div class="clientes_list_table">
+            <table>
+              <thead>
+                <tr>
+                  <th id="clientes_list_table_nombre">Nombre</th>
+                  <th id="clientes_list_table_email">Correo Electronico</th>
+                  <th id="clientes_list_table_phone">Telefono</th>
+                </tr>
+              </thead>
+              <tbody class="tabla_clientes_body">
+                <tr>
+                  <td>Jose Martinez</td>
+                  <td>Jose91@gmial.com</td>
+                  <td>65821536</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../principal/js/utils.js"></script>
+    <script src="js/edit.js"></script>
+  </body>
+</html>

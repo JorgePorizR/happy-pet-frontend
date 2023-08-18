@@ -1,0 +1,43 @@
+.popup_container_msg {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_msg {
+    width: 150px;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3540a5;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#msg_title{
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+}
+
+#msg_btn_ok{
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+
+#msg_btn_ok:hover{
+    font-weight: bold;
+    background-color: #4469cf;
+    border: 1px solid #2a52c0;
+}

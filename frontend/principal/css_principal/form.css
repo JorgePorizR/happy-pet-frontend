@@ -1,0 +1,136 @@
+.popup_create {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_create_user {
+  width: 320px;
+  margin: 0px auto;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#btn_exit_form span{
+  font-size: 25px;
+  float: right;
+  color: #3540a5;
+}
+
+#btn_exit_form span:hover{
+  color: #ff0000;
+}
+
+.register_logo {
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+.register_logo img {
+  width: 100px;
+}
+
+.form_registro{
+  margin-left: 8px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.form_registro label{
+  margin-left: 5px;
+  font-size: 15px;
+}
+
+.create_validacion{
+  color: #ff0000;
+  font-size: 12px;
+  margin: 0px;
+}
+
+.form_registro input[type="text"],
+.form_registro input[type="password"],
+.form_registro input[type="email"],
+.form_registro input[type="tel"] {
+  width: 280px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form_registro input[type="text"]::placeholder ,
+.form_registro input[type="password"]::placeholder ,
+.form_registro input[type="email"]::placeholder ,
+.form_registro input[type="tel"]::placeholder {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.form_registro input[type="text"]:focus ,
+.form_registro input[type="password"]:focus ,
+.form_registro input[type="email"]:focus ,
+.form_registro input[type="tel"]:focus {
+  border-color: #273399;
+  outline: none;
+}
+
+.form_registro input[type="submit"] {
+  width: 300px;
+  padding: 10px;
+  background-color: #3540a5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form_registro input[type="submit"]:hover {
+  background-color: #273399;
+}
+
+/*Tablet*/
+@media (min-width: 768px) {
+  
+  .popup_create_user {
+    width: 400px;
+    margin: 0px auto;
+    padding: 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .form_registro{
+    margin-left: 0px;
+  }
+
+  .form_registro input[type="text"],
+  .form_registro input[type="password"],
+  .form_registro input[type="email"],
+  .form_registro input[type="tel"] {
+    width: 380px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+
+  .form_registro input[type="submit"] {
+    width: 400px;
+  }
+}
+
+/*Laptop*/
+@media (min-width: 1024px) {
+
+}
+
+/*PC*/
+@media (min-width: 1280px) {
+
+}

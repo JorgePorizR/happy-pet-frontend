@@ -1,0 +1,170 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #366ba0;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+.header_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+.header a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.header_logo_img{
+    width: 35px;
+    margin-right: 10px;
+}
+
+.header_titulo_img{
+    width: 150px;
+    aspect-ratio: 24 / 6;
+    object-fit: cover;
+}
+
+.header_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.header_search{
+    width: 140px;
+    height: 30px;
+    display: flex;
+    border: 1px solid #ECECEC;
+    margin-left: 5px;
+}
+
+.search_input{
+    border: none;
+    padding: 0px;
+    padding-left: 10px;
+    width: 100px;
+    font-size: 12px;
+    background-color: #366ba0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.search_input::placeholder{
+    color: #d5d5d5;
+}
+
+.search_button{
+    background-color: #366ba0;
+    border: none;
+    width: 30px;
+    font-size: 12px;
+    padding-right: 10px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.header_car{
+    border: 0px;
+    background-color: #366ba0;
+    color: #000000;
+    cursor: pointer;
+}
+
+.header_car{
+    font-size: 20px;
+    margin-right: 0px;
+}
+
+.header_car:hover{
+    color: #ffffff;
+}
+
+.header_edit{
+    font-size: 20px;
+    display: none; /*volver none*/
+}
+
+.header_edit:hover{
+    color: #ffffff;
+}
+
+/*Tablet*/
+@media (min-width: 768px){
+    .header{
+        justify-content: space-around;
+    }
+
+    .header_search{
+        width: 300px;
+        height: 30px;
+        display: flex;
+        margin-left: 50px;
+    }
+    
+    .search_input{
+        border: none;
+        padding: 0px;
+        padding-left: 10px;
+        width: 250px;
+        font-size: 12px;
+    }
+
+    .header_car{
+        font-size: 25px;
+        margin-right: 0px;
+    }
+}
+
+/*Laptop*/
+@media (min-width: 1024px){
+    
+}
+
+/*PC*/
+@media (min-width: 1280px){
+    .header_nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+    
+    .header_search{
+        width: 400px;
+        height: 30px;
+        display: flex;
+        margin-left: 150px;
+    }
+    
+    .search_input{
+        border: none;
+        padding: 0px;
+        padding-left: 10px;
+        width: 350px;
+        font-size: 12px;
+    }
+    
+    .search_button{
+        border: none;
+        width: 30px;
+        font-size: 12px;
+        padding-right: 10px;
+    }
+
+    .search_button{
+        font-size: 18px;
+    }
+    
+    .header_car{
+        font-size: 30px;
+        margin-right: 50px;
+    }
+}
+

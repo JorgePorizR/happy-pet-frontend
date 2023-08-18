@@ -1,0 +1,115 @@
+.popup_container {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup_login {
+  width: 320px;
+  margin: 0px auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+#btn_login_exit{
+  border: 0px;
+  background-color: #ffffff;
+  font-size: 25px;
+  float: right;
+  color: #3540a5;
+}
+
+#btn_login_exit span:hover{
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.login_logo {
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 20px;
+}
+
+.login_logo img {
+  width: 100px;
+}
+
+.login_form input[type="email"],
+.login_form input[type="password"] {
+  width: 280px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login_form input[type="submit"] {
+  width: 300px;
+  padding: 10px;
+  background-color: #3540a5;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login_form input[type="submit"]:hover {
+  background-color: #273399;
+}
+
+.login_validacion{
+  color: #ff0000;
+  font-size: 12px;
+  margin: 0px;
+}
+
+.login_form .login_form_create {
+  text-align: center;
+  margin-top: 15px;
+}
+
+#create_user{
+  color: #273399;
+}
+
+/*Tablet*/
+@media(min-width: 768px){
+  
+  .popup_login {
+    width: 400px;
+    margin: 0px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .login_form input[type="email"],
+  .login_form input[type="password"] {
+    width: 380px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+
+  .login_form input[type="submit"] {
+    width: 400px;
+  }
+}
+
+/*Laptop*/
+@media(min-width: 1024px){
+
+}
+
+/*PC*/
+@media(min-width: 1280px){
+
+}

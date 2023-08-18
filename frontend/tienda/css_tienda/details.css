@@ -1,0 +1,143 @@
+.popup_container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_detalle {
+    width: 320px;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #366ba0;
+}
+
+#btn_detalle_exit{
+    border: 0px;
+    background-color: #366ba0;
+    font-size: 25px;
+    float: right;
+    color: #1725a5;
+}
+  
+#btn_detalle_exit span:hover{
+    color: #ff0000;
+}
+
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #ffffff;
+}
+
+.details_data{
+    margin: 0px;
+    display: flex;
+}
+
+.details_data img{
+    width: 145px;
+    margin-right: 0px;
+}
+
+.details_data_text{
+    font-size: 14px;
+    margin-top: 10%;
+    margin-left: 10px;
+}
+
+.details_data_button{
+    padding: 5px;
+    text-decoration: none;
+    background-color: #366ba0;
+    color: #000000;
+    border-radius: 10px;
+    border-top: 1px solid #295e94;
+    border-left: 1px solid #295e94;
+    border-right: 2px solid #295e94;
+    border-bottom: 2px solid #295e94;
+}
+
+.details_data_button:hover{
+    color: #ffffff;
+    background-color: #407cb9;
+    border-top: 1px solid #336ba3;
+    border-left: 1px solid #336ba3;
+    border-right: 2px solid #336ba3;
+    border-bottom: 2px solid #336ba3;
+}
+
+.details_description{
+    width: 300px;
+    text-align: start;
+    font-size: 13px;
+}
+
+/*Tablet*/
+@media (min-width:768px){
+
+    .popup_detalle {
+        width: 550px;
+        margin: 0px auto;
+        padding: 15px;
+    }
+
+    .details_data img{
+        width: 250px;  
+        margin-right: 50px;
+    }
+    
+    .details_data_text{
+        font-size: 20px;
+        margin-top: 10%;
+    }
+    
+    .details_description{
+        width: 900px;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+/*Laptop*/
+@media (min-width: 1024px){
+    .popup_detalle {
+        width: 600px;
+        margin: 0px auto;
+        padding: 15px;
+    }
+}
+
+/*PC*/
+@media (min-width:1280px){
+
+    .popup_detalle {
+        width: 650px;
+        margin: 0px auto;
+        padding: 15px;
+    }
+    
+    .details_data img{
+        width: 350px;
+        margin-right: 50px;
+    }
+    
+    .details_data_text{
+        font-size: 20px;
+        margin-top: 10%;
+    }
+
+    .details_description{
+        width: 900px;
+        margin: 0px;
+    }
+}

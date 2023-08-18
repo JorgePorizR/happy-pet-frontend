@@ -1,0 +1,67 @@
+.slider{
+    overflow: hidden;
+    margin-left: 8%;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    width: 350px;
+}
+
+.slider_inner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: all 0.3s ease-in;
+    align-items: center;
+}
+
+.slider_inner img{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+}
+
+/*Tablet*/
+@media (min-width: 768px){
+    .slider{
+        overflow: hidden;
+        margin-left: 45px;
+        margin-top: 25px;
+        width: 680px;
+    }
+}
+
+/*Laptop*/
+@media (min-width: 1024px){
+    .slider{
+        overflow: hidden;
+        margin-left: 120px;
+        margin-top: 25px;
+        width: 785px;
+    }
+
+}
+
+
+/*PC*/
+@media (min-width: 1280px){
+    .slider{
+        overflow: hidden;
+        margin-left: 160px;
+        margin-top: 25px;
+        width: 880px;
+    }
+    
+    .slider_inner{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        transition: all 0.3s ease-in;
+        align-items: center;
+    }
+    
+    .slider_inner img{
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+    }
+}

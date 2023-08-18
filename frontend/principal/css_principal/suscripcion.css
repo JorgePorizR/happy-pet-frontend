@@ -1,0 +1,102 @@
+.suscripcion{
+    width: 100%;
+    height: 300px;
+    background-color: #5695d3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subcripcion_title{
+    font-size: 18px;
+    color: #f1f0f0;
+}
+
+.suscripcion p{
+    color: #f1f0f0;
+    font-size: 14px;
+    margin: 5px 5px;
+}
+
+.suscripcion_email{
+    display: flex;
+}
+
+.subcripcion_emailText{
+    border: 1px solid #d5d5d5;
+    padding: 9px 3px;
+    width: 150px;
+    margin-right: 10px;
+    font-size: 12px;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.subcripcion_emailText::placeholder{
+    color: #d5d5d5;
+}
+
+.subcripcion_boton{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px 3px;
+    border-radius: 2px;
+    border: 2px solid #336ba3;
+    background-color: #407cb9;
+}
+
+/*Tablet*/
+@media (min-width:768px){
+    .suscripcion{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .suscripcion_title{
+        font-size: 13px;
+    }
+    
+    .suscripcion_email{
+        display: flex;
+    }
+    
+    .subcripcion_emailText{
+        padding: 9px 3px;
+        width: 250px;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+}
+
+/*Portatil*/
+@media (min-width: 1024px){
+    .suscripcion{
+        width: 800px;
+        height: 200px;
+        margin-left: 11%;
+    }
+}
+
+/*PC*/
+@media (min-width:1280px){
+    .suscripcion{
+        width: 900px;
+        height: 200px;
+        margin-left: 150px;
+    }
+    
+    .suscripcion_title{
+        font-size: 14px;
+    }
+    
+    .suscripcion_email{
+        display: flex;
+    }
+    
+    .subcripcion_emailText{
+        padding: 9px 3px;
+        width: 250px;
+        margin-right: 10px;
+        font-size: 12px;
+    }
+}

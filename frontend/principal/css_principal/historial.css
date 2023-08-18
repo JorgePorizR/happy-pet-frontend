@@ -1,0 +1,109 @@
+.popup_container_historial {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_historial {
+    width: 380px;
+    height: 450px;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3540a5;
+    font-family: "Roboto", sans-serif;
+}
+
+#btn_exit_historial{
+    border: 0px;
+    font-size: 25px;
+    float: right;
+    background-color: #3540a5;
+    color: #ffffff;
+}
+  
+#btn_exit_historial span:hover{
+    color: #ff0000;
+    cursor: pointer;
+}
+
+#historial_titulo{
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.list_historial{
+    display: flex;
+    justify-content: center;
+    height: 365px;
+}
+
+.list_table_historial{
+    height: 360px;
+    overflow: auto;
+    text-align: center;
+}
+
+.list_table_historial table td, th{
+    border-bottom: 1px solid #585858;
+    padding: 10px 0px;
+}
+
+.tabla_historial_body tr{
+    transition: all ease 300ms;
+}
+
+.tabla_historial_body tr:hover{
+    background-color: #2f40d3;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all ease-in 300ms;
+}
+
+#tabla_historial_fecha{
+    width: 80px;
+}
+
+#tabla_historial_total{
+    width: 60px;
+}
+
+#tabla_historial_articulos{
+    width: 150px;
+}
+
+/*Tablet*/
+@media (min-width: 768px){
+    .popup_historial {
+        width: 600px;
+        margin: 0px auto;
+    }
+
+    #tabla_historial_fecha{
+        width: 150px;
+    }
+    
+    #tabla_historial_total{
+        width: 100px;
+    }
+    
+    #tabla_historial_articulos{
+        width: 250px;
+    }
+    
+}
+/*Laptop*/
+@media (min-width: 768px){
+
+}
+/*PC*/
+@media (min-width: 768px){
+
+}
