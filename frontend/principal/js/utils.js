@@ -23,6 +23,6 @@ function setUserInSession(user) {
 function salir() {
     setUserInSession(null);
     //window.location.href = "principal.html";
-    window.location.href = "https://happy-pet-apirest.onrender.com";
+    window.location.href = "https://happypet-frontend.onrender.com";
 }
 
