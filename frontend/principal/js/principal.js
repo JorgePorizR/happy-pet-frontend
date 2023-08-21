@@ -139,7 +139,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const userData = await response.json();
         setUserInSession(userData);
         console.log("Datos recibidos del servidor en response.json:", userData);
-        window.location.href = "principal.html";
+        //window.location.href = "principal.html";
+        window.location.href = "https://happy-pet-apirest.onrender.com";
       } else if (response.status == 401) {
         validacion_cuenta.innerHTML = "*cuenta no existente*";
         validacion_cuenta.style.display = "block";
