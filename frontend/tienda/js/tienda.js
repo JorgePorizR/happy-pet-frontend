@@ -361,7 +361,7 @@ botonComprar.addEventListener("click", function () {
     modal_msg.style.display = "flex";
     msg_title.innerHTML = "Tienes que estar logueado para continuar";
     msg_btn_ok.addEventListener("click", function(){
-      window.location.href = "http://127.0.0.1:5500/frontend/principal/principal.html";
+      window.location.href = "http://127.0.0.1:5500/frontend/index.html";
     })
   }
 

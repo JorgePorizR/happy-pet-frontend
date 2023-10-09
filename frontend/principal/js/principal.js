@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     historial(userInSession.usuarioId);
     if (userInSession.administrador === true) {
-      window.location.href = "http://127.0.0.1:5500/frontend/tienda/edit.html";
+      window.location.href = "http://127.0.0.1:5500/frontend/edit.html";
       return;
     }
     return;
